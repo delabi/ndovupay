@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "OdorMeanChey";
+  src: local("OdorMeanChey"), url("./fonts/OdorMeanChey.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "NunitoRegular";
+  src: local("NunitoRegular"),
+    url("./fonts/nunito/Nunito-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "NunitoBold";
+  src: local("NunitoBold"),
+    url("./fonts/nunito/Nunito-Bold.ttf") format ("truetype");
+  font-weight: 700;
+}
+
+.navbar {
+  font-family: "NunitoRegular";
+  color: $primary;
+  font-size: large;
+}
+
+h1 {
+  font-size: xxx-large;
+  color: $primary;
+  font-family: "OdorMeanChey";
+  font-weight: "400";
+  line-height: 104%;
+}
+
+h2 {
+  font-size: xxx-large;
+  color: $primary;
+  font-family: "OdorMeanChey";
+  text-decoration: underline;
+  //text-decoration-thickness: initial;
+  text-decoration-color: $info;
+}
+
+h3 {
+  font-size: xx-large;
+  font-weight: 700;
+  font-family: "NunitoRegular";
+  color: $primary;
+}
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: xx-large !important;
+  }
+  h2 {
+    font-size: xx-large !important;
+  }
+  h3 {
+    font-size: x-large !important;
+  }
+  .navbar {
+    font-size: small !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: xx-large !important;
+  }
+  h2 {
+    font-size: xx-large !important;
+  }
+  h3 {
+    font-size: larger !important;
+  }
+  .navbar {
+    font-size: x-small !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: xx-large !important;
+  }
+  h2 {
+    font-size: xx-large !important;
+  }
+  h3 {
+    font-size: large !important;
+  }
+  .navbar {
+    font-size: medium !important;
+  }
+}
+
+// h4 {
+//   font-size: xx-large;
+//   color: $primary;
+//   font-family: "NunitoRegular";
+//   font-weight: 700;
+// }
+
+p {
+  font-family: "NunitoRegular";
+  font-size: large;
+  line-height: 1;
+  //color: $primary;
+}

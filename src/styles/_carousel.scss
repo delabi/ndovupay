@@ -1,0 +1,19 @@
+.carousel {
+  .caption {
+    @extend .pt-5;
+    @extend .ps-5;
+    // bottom: 0px;
+
+    @media (max-width: 576px) {
+      padding-left: 1rem !important;
+    }
+  }
+
+  
+}
+
+// @media (min-width: 576px) {
+//   .carousel.caption{
+//     padding-left: 1rem !important;
+//   }
+// }
