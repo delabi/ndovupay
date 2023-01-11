@@ -61,11 +61,7 @@ const Body = () => {
   return (
     <>
       <Container fluid className="d-flex">
-        <Col
-          lg={3}
-          className="d-none d-lg-block"
-          style={{ marginTop: "75px" }}
-        >
+        <Col lg={3} className="d-none d-lg-block" style={{ marginTop: "75px" }}>
           <Navbar
             bg="light"
             variant="light"
@@ -93,7 +89,7 @@ const Body = () => {
                   />
                   My Transactions
                 </Nav.Link>
-                
+
                 <Nav.Link className="d-flex">
                   <img
                     className="align-self-center me-3"
@@ -129,11 +125,9 @@ const Body = () => {
             <div className="d-flex">Account Type: Individual | Business</div>
           </Navbar>
         </Col>
-        <Col lg={8} style={{ marginTop: "75px" }}>
-          <div
-            className="fs-2 d-none d-lg-block ms-3"
-          >
-            Hi,<span className="text-success"> Austine</span> !
+        <Col lg={8} md={8} style={{ marginTop: "75px" }}>
+          <div className="fs-2 d-none d-md-block ms-3">
+            Hi,<span className="text-warning"> Austine</span> !
           </div>
           <div
             className="d-flex flex-wrap mt-lg-3"
@@ -171,6 +165,7 @@ const Body = () => {
 
             {homeOptions.map(({ image, optionText, alerts }, index) => (
               <Card
+                
                 style={{
                   width: "45%",
                   maxWidth: "10em",
@@ -178,6 +173,7 @@ const Body = () => {
                   background: homeOptions[index].bgColor,
                   border: homeOptions[index].bgColor,
                 }}
+                
                 className="text-white d-flex flex-row my-3 ms-2 me-0"
               >
                 <Card.Body className="position-relative">

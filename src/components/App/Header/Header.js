@@ -28,35 +28,39 @@ const Header = () => {
 
           <div className="d-flex">
             <Nav.Item className="d-block d-flex align-items-center">
-              <span className="badge bg-success fs-2 rounded-pill">?</span>
-              <p className="d-none d-lg-block my-auto mx-1">Help</p>
+              <Badge bg="success" className=" fs-2 rounded-pill">
+                ?
+              </Badge>
+              <p className="d-none d-md-block my-auto mx-1">Help</p>
             </Nav.Item>
 
-            <Nav.Item className="d-none d-lg-block">
-            <img
+            <Nav.Item className="d-none d-md-block">
+              <img
                 className="align-self-center mt-3 mx-3 py-auto"
                 src={bellAlert}
-                // width="26"
-                // height="30"
                 alt=""
               />
-              <Badge bg="success" className="position-flex top-0 start-100 translate-middle rounded-pill">2</Badge></Nav.Item>
-              <Nav.Item className="d-none d-lg-block">
+              <Badge
+                bg="warning"
+                className="position-flex top-0 start-100 translate-middle rounded-pill"
+              >
+                2
+              </Badge>
+            </Nav.Item>
+            <Nav.Item className="d-none d-md-block">
               <img
                 className="align-self-center mt-3 mx-3 py-auto"
                 src={userAccount}
-                // width="26"
-                // height="30"
                 alt=""
               />
               Austin
-              </Nav.Item>
+            </Nav.Item>
             <Navbar.Toggle className="mx-3" aria-controls="basic-navbar-nav" />
           </div>
         </Container>
       </Navbar>
 
-{/* Bottom NavBar */}
+      {/* Bottom NavBar */}
       <Navbar
         fixed="bottom"
         bg="light"
